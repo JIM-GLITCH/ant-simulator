@@ -329,9 +329,9 @@ function TAnt.create()
     if otherAnts > 0 then 
       vec.scale(destination,1/otherAnts) 
     ant.headTo(destination)
-  end --func
-    
+    end --if
   end
+          
   function ant.detectNeighbor()--detect food or cave and just set direction to it
     local X = ant.grid[1]
     local Y = ant.grid[2]
